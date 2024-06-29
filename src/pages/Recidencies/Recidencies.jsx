@@ -14,7 +14,7 @@ const Recidencies = () => {
           {" "}
           <span className="text-yellow-600">Our</span>{" "}
           <span>Excellent</span>{" "}
-          <span className="text-blue-600">Recedencies</span>
+          <span className="text-blue-600">Recidencies</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
           {houses.map((house) => (
