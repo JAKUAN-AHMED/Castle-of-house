@@ -1,28 +1,54 @@
-import { useEffect, useState } from "react";
-import Recidence from "../Recidence/Recidence";
-
+import {Swiper,SwiperSlide,useSwiper} from 'swiper/react';
+import 'swiper/css';
+import './Recidencies.css';
+import data from '../../../public/data.json';
+import { IoPricetagsOutline } from "react-icons/io5";
+import { sliderSettings } from './Recidencies.js';
 const Recidencies = () => {
-    const [houses,setHouses]=useState([]);
-    useEffect(()=>{
-        fetch('data.json')
-        .then(res=>res.json())
-        .then(data=>setHouses(data));
-    },[])
+  console.log(data)
     return (
-      <div className="mt-24">
-        <h2 className="text-4xl font-bold  text-center">
-          {" "}
-          <span className="text-yellow-600">Our</span>{" "}
-          <span>Excellent</span>{" "}
-          <span className="text-blue-600">Recidencies</span>
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-          {houses.map((house) => (
-            <Recidence key={house.id} house={house}></Recidence>
-          ))}
+      <section>
+        <div className="paddings innerWidth r-container">
+          <div className="head flexColStart mt-12 mb-12">
+            <span className="orangeText">Our</span>
+            <span className="primaryText">Best Recidencies</span>
+          </div>
+          <Swiper {...sliderSettings}>
+            <SliderButtons />
+            {data.map((card, i) => (
+              <SwiperSlide key={i}>
+                <div className="flexColStart r-card">
+                  <img src={card.image} alt="" />
+                  <span className="secondaryText r-price flex items-center gap-2">
+                    <span>
+                      <IoPricetagsOutline></IoPricetagsOutline>
+                    </span>
+                    <span className="text-yellow-600">
+                      Price : {card.price}
+                    </span>
+                  </span>
+                  <span className="primaryText">{card.estate_title}</span>
+
+                  <span className="secondaryText">{card.description}</span>
+                  <button className="btn w-24 text-[12px] p-1 btn-square bg-yellow-400 text-black">
+                    View Property
+                  </button>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </div>
+      </section>
     );
 };
 
 export default Recidencies;
+const SliderButtons=()=>{
+  const swiper=useSwiper();
+  return (
+    <div className="r-buttons gap-2">
+      <button className='mr-2' onClick={() => swiper.slidePrev()}>&lt;</button>
+      <button onClick={() => swiper.slideNext()}>&gt;</button>
+    </div>
+  );
+}

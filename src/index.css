@@ -5,3 +5,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.innerWidth{
+    width: 100%;
+}
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.primaryText {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondaryText {
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
+}
+.orangeText {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.paddings {
+  padding: 1.5rem;
+}
+.wrapper{
+  background-color: white;
+}

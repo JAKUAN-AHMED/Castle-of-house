@@ -1,5 +1,5 @@
 import Header from "../Header/Header";
-import Recidencies from "../Recidencies/Recidencies";
+import Recidencies from "../Recidencies/Recidencies.jsx";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 
