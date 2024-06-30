@@ -1,0 +1,19 @@
+[
+  { "id": 1, "facility": "Living room" },
+  { "id": 2, "facility": "Study area" },
+  { "id": 3, "facility": "Shared kitchen" },
+  { "id": 4, "facility": "Shared bathroom" },
+  { "id": 5, "facility": "Wi-Fi" },
+  { "id": 6, "facility": "Study room" },
+  { "id": 7, "facility": "Living room" },
+  { "id": 8, "facility": "Kitchen" },
+  { "id": 9, "facility": "Balcony" },
+  { "id": 10, "facility": "Parking" },
+  { "id": 11, "facility": "Gym" },
+  { "id": 12, "facility": "Swimming pool" },
+  { "id": 13, "facility": "Fireplace" },
+  { "id": 14, "facility": "Private elevator" },
+  { "id": 15, "facility": "Rooftop" },
+  { "id": 16, "facility": "Garden" },
+  { "id": 17, "facility": "Garage" }
+]

@@ -1,38 +1,53 @@
 import {Swiper,SwiperSlide,useSwiper} from 'swiper/react';
 import 'swiper/css';
 import './Recidencies.css';
-import data from '../../../public/data.json';
 import { IoPricetagsOutline } from "react-icons/io5";
 import { sliderSettings } from './Recidencies.js';
+import { useEffect, useState } from 'react';
 const Recidencies = () => {
-  console.log(data)
+  const [info,setInfo]=useState([]);
+  useEffect(()=>{
+    fetch('data.json')
+    .then(res=>res.json())
+    .then(data=>setInfo(data))
+  },[])
     return (
-      <section>
+      <section className="wrapper">
         <div className="paddings innerWidth r-container">
-          <div className="head flexColStart mt-12 mb-12">
+          <div className="r-head flexColStart mt-12 mb-12">
             <span className="orangeText">Our</span>
             <span className="primaryText">Best Recidencies</span>
           </div>
           <Swiper {...sliderSettings}>
             <SliderButtons />
-            {data.map((card, i) => (
+            {info.map((card, i) => (
               <SwiperSlide key={i}>
-                <div className="flexColStart r-card">
-                  <img src={card.image} alt="" />
-                  <span className="secondaryText r-price flex items-center gap-2">
-                    <span>
-                      <IoPricetagsOutline></IoPricetagsOutline>
-                    </span>
-                    <span className="text-yellow-600">
-                      Price : {card.price}
-                    </span>
-                  </span>
-                  <span className="primaryText">{card.estate_title}</span>
-
-                  <span className="secondaryText">{card.description}</span>
-                  <button className="btn w-24 text-[12px] p-1 btn-square bg-yellow-400 text-black">
-                    View Property
-                  </button>
+                <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 ease-in-out hover:scale-105">
+                  <img
+                    src={card.image}
+                    alt={card.estate_title}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <h2 className="text-2xl font-bold mb-2">
+                      {card.estate_title}
+                    </h2>
+                   
+                    <p className="text-gray-700 mb-2 flex gap-2">
+                      <strong className="flex items-center gap-2">
+                        <span>
+                          <IoPricetagsOutline></IoPricetagsOutline>
+                        </span>{" "}
+                        <span className='text-yellow-600'>Status</span> :
+                      </strong>{" "}
+                      {card.status}
+                    </p>
+                    
+                    <p className="text-gray-700 mb-2">
+                      <strong>Area:</strong> {card.area}
+                    </p>
+                   <button className='btn btn-square bg-yellow-400 text-black w-24 text-[12px]'>View Property</button>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

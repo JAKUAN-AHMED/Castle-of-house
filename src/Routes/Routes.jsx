@@ -21,6 +21,10 @@ const router=createBrowserRouter([
             {
                 path:'/contact',
                 element:<Contact_us></Contact_us>
+            },
+            {
+                path:'/aminities',
+                element:<Contact_us></Contact_us>
             }
         ]
     }
