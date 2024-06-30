@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { CiLocationArrow1 } from "react-icons/ci";
 import { useEffect, useState } from "react";
 
 const Amenitites = () => {
@@ -52,6 +53,7 @@ const Amenitites = () => {
             <div className="card border rounded shadow-lg bg-[#fff5f5] font-popins text-center  m-4">
               <div className="card-body">
                 <h2 className="text-3xl card-title text-center text-blue-400">
+                    <span><CiLocationArrow1></CiLocationArrow1></span>
                   {review.facility}
                 </h2>
               </div>
