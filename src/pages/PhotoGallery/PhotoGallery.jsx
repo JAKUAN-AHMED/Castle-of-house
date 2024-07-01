@@ -9,7 +9,7 @@ const PhotoGallery = () => {
     },[]
     );
     return (
-      <div className="mt-24 p-4">
+      <div data-aos="zoom-in-up" data-aos-duration="1500" className="mt-24 p-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
             Photo <span className="text-yellow-600">Gallery</span>

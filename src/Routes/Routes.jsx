@@ -7,42 +7,42 @@ import Login from "../pages/Login/Login";
 import View from "../pages/View/View";
 import Register from "../pages/Shared/Register/Register";
 
-const router=createBrowserRouter([
-    {
-        path:'/',
-        element:<Root></Root>,
-        children:[
-            {
-                path:'/',
-                element:<Home></Home>
-            },
-            {
-                path:'/details',
-                element:<PropertyDetails></PropertyDetails>
-            }
-            ,
-            {
-                path:'/contact',
-                element:<Contact_us></Contact_us>
-            },
-            {
-                path:'/login',
-                element:<Login></Login>
-            },
-            {
-                path:'/register',
-                element:<Register></Register>
-            },
-            {
-                path:'/res/:id',
-                element:<View></View>,
-                loader:()=>fetch('/data.json'),
-            },
-            {
-                path:'/aminities',
-                element:<Contact_us></Contact_us>
-            }
-        ]
-    }
-])
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root></Root>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/details",
+        element: <PropertyDetails></PropertyDetails>,
+        loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/contact",
+        element: <Contact_us></Contact_us>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/res/:id",
+        element: <View></View>,
+        loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/aminities",
+        element: <Contact_us></Contact_us>,
+      },
+    ],
+  },
+]);
 export default router;

@@ -8,9 +8,13 @@ import {
 import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/firebase.config";
+import toast, {Toaster } from "react-hot-toast";
 export const AuthContext = createContext();
 const ProviderContext = ({ children }) => {
-  const auth=getAuth(app);
+  //toast
+  const notify = () => toast.success("Successfully Registered");
+  const notify1 = () => toast.success("Successfully LogOut");
+  const auth = getAuth(app);
   //toast
   const [User, setUser] = useState(null);
   const [Loader, setLoader] = useState(true);
@@ -48,10 +52,13 @@ const ProviderContext = ({ children }) => {
     LogIn,
     LogOut,
     Loader,
+    notify,
+    notify1
   };
   return (
     <AuthContext.Provider value={AuthInfo}>
       {children}
+      <Toaster></Toaster>
     </AuthContext.Provider>
   );
 };

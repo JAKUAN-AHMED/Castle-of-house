@@ -1,18 +1,28 @@
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 import login_image from '../../assets/login_image.jpg'
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Utility/Provider/ProviderContext";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 const Login = () => {
    const {LogIn}=useContext(AuthContext);
+   const [Error,setError]=useState(null);
    const handleLogin = (e) => {
     e.preventDefault();
      const form=new FormData(e.currentTarget);
-     const name=form.get("name");
      const email=form.get("email");
      const password=form.get("password");
-     console.log(name,email,password);
+     //Sign In
+     setError('');
+     LogIn(email,password)
+     .then(res=>{
+      toast.success('succesfully login')
+      console.log(res.user)
+      e.target.reset();
+    })
+     .catch(error=>setError(error.message))
+
    };
     return (
       <div>
@@ -87,6 +97,7 @@ const Login = () => {
                 </Link>
               </p>
             </div>
+
           </div>
         </div>
         <Footer></Footer>

@@ -23,7 +23,11 @@ const Recidencies = () => {
           <SliderButtons />
           {info.map((card, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 ease-in-out hover:scale-105">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 "
+              >
                 <img
                   loading="lazy"
                   src={card.image}
