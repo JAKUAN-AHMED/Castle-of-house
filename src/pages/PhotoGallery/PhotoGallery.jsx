@@ -25,7 +25,7 @@ const PhotoGallery = () => {
               key={photo.id}
               className="transform transition duration-300 ease-in-out hover:scale-105"
             >
-              <img src={photo.image} alt="" />
+              <img loading="lazy" src={photo.image} alt="" />
             </div>
           ))}
         </div>

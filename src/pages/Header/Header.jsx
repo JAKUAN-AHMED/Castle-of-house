@@ -1,6 +1,7 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./Header.css";
+import { Link} from "react-router-dom";
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -101,7 +102,7 @@ function Header() {
                 Explore your New destiny
               </p>
               <button className="btn btn-square w-[150px] p-1 bg-yellow-400 text-black">
-                View Property
+               View Property
               </button>
             </div>
           </div>
@@ -127,7 +128,7 @@ function Header() {
                 Explore your New destiny
               </p>
               <button className="btn btn-square w-[150px] p-1 bg-yellow-400 text-black">
-                View Property
+                <Link to={`/infos/:id`}>View Property</Link>
               </button>
             </div>
           </div>
