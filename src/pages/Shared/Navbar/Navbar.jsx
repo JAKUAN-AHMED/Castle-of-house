@@ -50,7 +50,10 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end ">
+        <div className="navbar-end gap-2">
+          <a className="btn btn-ghost border-black">
+            <Link to={"/register"}>Register</Link>
+          </a>
           <a className="btn btn-ghost border-black">
             <Link to={"/login"}>Login</Link>
           </a>

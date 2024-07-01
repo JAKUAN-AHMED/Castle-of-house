@@ -1,7 +1,19 @@
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 import login_image from '../../assets/login_image.jpg'
+import { useContext } from "react";
+import { AuthContext } from "../../Utility/Provider/ProviderContext";
+import { Link } from "react-router-dom";
 const Login = () => {
+   const {LogIn}=useContext(AuthContext);
+   const handleLogin = (e) => {
+    e.preventDefault();
+     const form=new FormData(e.currentTarget);
+     const name=form.get("name");
+     const email=form.get("email");
+     const password=form.get("password");
+     console.log(name,email,password);
+   };
     return (
       <div>
         <Navbar></Navbar>
@@ -11,8 +23,10 @@ const Login = () => {
               <h1 className="text-4xl font-bold text-blue-600 mt-4">
                 Login <span className="text-yellow-400">Please</span>{" "}
               </h1>
-              <h3 className="text-base font-bold mt-2 mb-4"> &
-               Explore <span className="text-yellow-600">Our</span> {" "} <span className="text-blue-600">website</span>
+              <h3 className="text-base font-bold mt-2 mb-4">
+                {" "}
+                & Explore <span className="text-yellow-600">Our</span>{" "}
+                <span className="text-blue-600">website</span>
               </h3>
               <img
                 loading="lazy"
@@ -20,13 +34,9 @@ const Login = () => {
                 src={login_image}
                 alt=""
               />
-
             </div>
             <div className="card bg-base-100 w-80 max-w-sm shrink-0 shadow-2xl">
-              <form
-                className="card-body"
-              >
-            
+              <form onSubmit={handleLogin} className="card-body">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>
@@ -63,7 +73,6 @@ const Login = () => {
                     required
                   />
                 </div>
-                
 
                 <div className="form-control mt-6">
                   <button className="btn btn-primary bg-[#fff5f5] text-blue-400 hover:bg-slate-100 hover:text-yellow-400">
@@ -71,6 +80,12 @@ const Login = () => {
                   </button>
                 </div>
               </form>
+              <p className="text-center">
+               Not Registered yet? Please{" "}
+                <Link className="link" to={"/register"}>
+                  <button className="link">Register</button>
+                </Link>
+              </p>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import Footer from "../Shared/Footer/Footer";
 
@@ -6,6 +6,10 @@ const View = () => {
     const properties=useLoaderData();
     const {id}=useParams();
     const idInt=parseInt(id);
+    const navigate=useNavigate();
+    const hanldeAdd=()=>{
+      navigate('/details')
+    }
     const property=properties.find(property=>property.id===idInt);
     return (
       <div className="max-w-5xl mx-auto">
@@ -61,6 +65,11 @@ const View = () => {
                   <span className="text-[#131313B2]">Price : </span>
                   {property.price}
                 </p>
+              </div>
+              <div className="mt-4">
+                <button onClick={hanldeAdd} className="text-base btn btns-squre bg-red-200 w-[150px] h-[50px] text-blue-400">
+                  Add
+                </button>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import PropertyDetails from "../pages/Details/PropertyDetails";
 import Contact_us from "../pages/Contact/Contact_us";
 import Login from "../pages/Login/Login";
 import View from "../pages/View/View";
+import Register from "../pages/Shared/Register/Register";
 
 const router=createBrowserRouter([
     {
@@ -29,9 +30,13 @@ const router=createBrowserRouter([
                 element:<Login></Login>
             },
             {
+                path:'/register',
+                element:<Register></Register>
+            },
+            {
                 path:'/res/:id',
                 element:<View></View>,
-                loader:()=>fetch('./data.json'),
+                loader:()=>fetch('/data.json'),
             },
             {
                 path:'/aminities',

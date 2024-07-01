@@ -76,7 +76,7 @@ function Header() {
                 Explore your New destiny
               </p>
               <button className="btn btn-square w-[150px] p-1 bg-yellow-400 text-black">
-                View Property
+                <Link to={"/details"}>View Property</Link>
               </button>
             </div>
           </div>
@@ -102,7 +102,7 @@ function Header() {
                 Explore your New destiny
               </p>
               <button className="btn btn-square w-[150px] p-1 bg-yellow-400 text-black">
-               View Property
+                <Link to={"/details"}>View Property</Link>
               </button>
             </div>
           </div>
@@ -128,7 +128,7 @@ function Header() {
                 Explore your New destiny
               </p>
               <button className="btn btn-square w-[150px] p-1 bg-yellow-400 text-black">
-                <Link to={`/infos/:id`}>View Property</Link>
+                <Link to={"/details"}>View Property</Link>
               </button>
             </div>
           </div>
