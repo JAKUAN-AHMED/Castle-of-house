@@ -9,7 +9,7 @@
     "area": "2500 sq ft",
     "location": "123 Maple Street, Springfield",
     "facilities": ["Living room", "Swimming pool", "Kitchen", "Garage"],
-    "image": "https://i.ibb.co/ZVr4Xzb/family1.jpg"
+    "image": "https://i.ibb.co/wpDk281/family1.jpg"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "area": "1800 sq ft",
     "location": "456 Oak Avenue, Metropolis",
     "facilities": ["Living room", "Garden", "Kitchen", "Fireplace"],
-    "image": "https://i.ibb.co/rtFdv5n/family2.jpg"
+    "image": "https://i.ibb.co/dGm3dRn/family2.jpg"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "area": "3500 sq ft",
     "location": "789 Pine Road, Smallville",
     "facilities": ["Living room", "Swimming pool", "Garden", "Garage"],
-    "image": "https://i.ibb.co/m8t97mM/family3.jpg"
+    "image": "https://i.ibb.co/JqMkrdF/family3.jpg"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "area": "1200 sq ft",
     "location": "101 Center Street, Cityville",
     "facilities": ["Living room", "Gym", "Balcony", "Parking"],
-    "image": "https://i.ibb.co/nnkj94Z/1-9.jpg"
+    "image": "https://i.ibb.co/f9hx2vG/1-9.jpg"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "area": "2500 sq ft",
     "location": "202 Skyline Avenue, Metropolis",
     "facilities": ["Living room", "Private elevator", "Rooftop", "Garage"],
-    "image": "https://i.ibb.co/8NRDs72/2-9.jpg"
+    "image": "https://i.ibb.co/rkZQT9D/2-9.jpg"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "area": "1500 sq ft",
     "location": "303 Greenway Blvd, Suburbia",
     "facilities": ["Living room", "Swimming pool", "Gym", "Parking"],
-    "image": "https://i.ibb.co/5svWbH4/3-9.jpg"
+    "image": "https://i.ibb.co/7CYmbtG/3-9.jpg"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "area": "2000 sq ft",
     "location": "404 Elm Street, Pleasantville",
     "facilities": ["Living room", "Garage", "Garden", "Kitchen"],
-    "image": "https://i.ibb.co/D7cR8tB/town1.jpg"
+    "image": "https://i.ibb.co/VJtK0Rz/town1.jpg"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "area": "2200 sq ft",
     "location": "505 Downtown Street, Cityville",
     "facilities": ["Living room", "Balcony", "Kitchen", "Garage"],
-    "image": "https://i.ibb.co/313xz48/town2.jpg"
+    "image": "https://i.ibb.co/3FsqHkJ/town2.jpg"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "area": "2100 sq ft",
     "location": "606 Seaside Avenue, Beach City",
     "facilities": ["Living room", "Swimming pool", "Kitchen", "Garage"],
-    "image": "https://i.ibb.co/c6p6p9d/town3.jpg"
+    "image": "https://i.ibb.co/F0N1zBJ/town3.jpg"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "area": "500 sq ft",
     "location": "707 College Road, University Town",
     "facilities": ["Living room", "Study area", "Kitchen", "Wi-Fi"],
-    "image": "https://i.ibb.co/xYMpNHP/student1.jpg"
+    "image": "https://i.ibb.co/99QKY7V/student1.jpg"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "area": "600 sq ft",
     "location": "808 Dorm Lane, University Town",
     "facilities": ["Living room", "Shared kitchen", "Study area", "Wi-Fi"],
-    "image": "https://i.ibb.co/wRYVhkn/student3.jpg"
+    "image": "https://i.ibb.co/cNrZj2y/student2.jpg"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "area": "400 sq ft",
     "location": "909 Campus Drive, University Town",
     "facilities": ["Living room", "Shared bathroom", "Study area", "Wi-Fi"],
-    "image": "https://i.ibb.co/xYMpNHP/student1.jpg"
+    "image": "https://i.ibb.co/3BBRdHL/student3.jpg"
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "area": "2200 sq ft",
     "location": "1010 Evergreen Terrace, Pleasantville",
     "facilities": ["Living room", "Healthcare center", "Kitchen", "Garden"],
-    "image": "https://i.ibb.co/y51J9jQ/s1.jpg"
+    "image": "https://i.ibb.co/7XS756n/s1.jpg"
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "area": "2000 sq ft",
     "location": "1111 Serenity Street, Quietville",
     "facilities": ["Living room", "Healthcare center", "Kitchen", "Garden"],
-    "image": "https://i.ibb.co/2sQ0Hy9/s2.jpg"
+    "image": "https://i.ibb.co/mt2c7B4/s2.jpg"
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "area": "2300 sq ft",
     "location": "1212 Leisure Lane, Seniorville",
     "facilities": ["Living room", "Community center", "Kitchen", "Garden"],
-    "image": "https://i.ibb.co/YhqGMXQ/s3.jpg"
+    "image": "https://i.ibb.co/WWc29KC/s3.jpg"
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "area": "1500 sq ft",
     "location": "1313 Ocean Drive, Beach City",
     "facilities": ["Living room", "Swimming pool", "Kitchen", "Beach access"],
-    "image": "https://i.ibb.co/9prcqLn/v1.jpg"
+    "image": "https://i.ibb.co/dr6Bx2m/v1.jpg"
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "area": "1400 sq ft",
     "location": "1414 Alpine Road, Mountain Town",
     "facilities": ["Living room", "Fireplace", "Kitchen", "Hiking trails"],
-    "image": "https://i.ibb.co/34HjgTf/v3.jpg"
+    "image": "https://i.ibb.co/9qXqcTj/v3.jpg"
   },
   {
     "id": 18,
@@ -213,6 +213,6 @@
     "area": "1600 sq ft",
     "location": "1515 Lakeview Lane, Lakeside",
     "facilities": ["Living room", "Swimming pool", "Kitchen", "Lake access"],
-    "image": "https://i.ibb.co/9prcqLn/v1.jpg"
+    "image": "https://i.ibb.co/dr6Bx2m/v1.jpg"
   }
 ]

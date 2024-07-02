@@ -61,7 +61,8 @@ function Header() {
         <div
           className="keen-slider__slide number-slide1"
           style={{
-            backgroundImage: "url('https://i.ibb.co/nnkj94Z/1-9.jpg')",
+            backgroundImage: "url('https://i.ibb.co/f9hx2vG/1-9.jpg')",
+            loading: "lazy",
             backgroundSize: "cover",
             backgroundPosition: "center",
             textAlign: "left",
@@ -88,7 +89,8 @@ function Header() {
         <div
           className="keen-slider__slide number-slide2"
           style={{
-            backgroundImage: "url('https://i.ibb.co/YhqGMXQ/s3.jpg')",
+            backgroundImage: "url('https://i.ibb.co/WWc29KC/s3.jpg')",
+            loading: "lazy",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -114,7 +116,8 @@ function Header() {
         <div
           className="keen-slider__slide number-slide3"
           style={{
-            backgroundImage: "url('https://i.ibb.co/5svWbH4/3-9.jpg')",
+            backgroundImage: "url('https://i.ibb.co/7CYmbtG/3-9.jpg')",
+            loading: "lazy",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -141,13 +144,16 @@ function Header() {
 
       <div ref={thumbnailRef} className="keen-slider thumbnail">
         <div className="keen-slider__slide number-slide1">
-          <img src="https://i.ibb.co/nnkj94Z/1-9.jpg" alt="" />
+          <img src="https://i.ibb.co/f9hx2vG/1-9.jpg" alt="" />
         </div>
         <div className="keen-slider__slide number-slide2">
-          <img src="https://i.ibb.co/YhqGMXQ/s3.jpg" alt="" />
+          <img src="https://i.ibb.co/WWc29KC/s3.jpg" alt="" />
         </div>
         <div className="keen-slider__slide number-slide3">
-          <img src="https://i.ibb.co/5svWbH4/3-9.jpg" alt="" />
+          <img
+            src="https://i.ibb.co/7CYmbtG/3-9.jpg"
+            alt=""
+          />
         </div>
       </div>
     </>
