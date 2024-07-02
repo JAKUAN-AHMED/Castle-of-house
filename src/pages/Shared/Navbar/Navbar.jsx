@@ -18,8 +18,8 @@ const Navbar = () => {
             style={({ isActive }) => {
               return {
                 background: isActive ? "white" : "white",
-                color: isActive ? "black" : "white",
-                border: isActive ? "2px solid red" : "red",
+                color: isActive ? "blue" : "",
+                border: isActive ? "2px solid black" : "",
               };
             }}
           >
@@ -31,9 +31,9 @@ const Navbar = () => {
             to={"/details"}
             style={({ isActive }) => {
               return {
-                background: isActive ? "yellow" : "",
-                color: isActive ? "white" : "",
-                border: isActive ? "2px solid red" : "",
+                background: isActive ? "white" : "white",
+                color: isActive ? "blue" : "",
+                border: isActive ? "2px solid black" : "",
               };
             }}
           >
@@ -45,9 +45,9 @@ const Navbar = () => {
             to={"/contact"}
             style={({ isActive }) => {
               return {
-                background: isActive ? "white" : "",
-                color: isActive ? "black" : "",
-                border: isActive ? "2px solid red" : "",
+                background: isActive ? "white" : "white",
+                color: isActive ? "blue" : "",
+                border: isActive ? "2px solid black" : "",
               };
             }}
           >
@@ -60,9 +60,9 @@ const Navbar = () => {
               to={"/update"}
               style={({ isActive }) => {
                 return {
-                  background: isActive ? "white" : "",
-                  color: isActive ? "purple" : "",
-                  border: isActive ? "2px solid red" : "",
+                  background: isActive ? "white" : "white",
+                  color: isActive ? "blue" : "",
+                  border: isActive ? "2px solid black" : "",
                 };
               }}
             >
@@ -94,7 +94,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
             >
               {links}
             </ul>
@@ -108,7 +108,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu menu-horizontal px-1 gap-2">{links}</ul>
         </div>
         <div className="navbar-end gap-2">
           {User ? (
