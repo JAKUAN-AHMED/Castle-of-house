@@ -13,17 +13,61 @@ const Navbar = () => {
     const links = (
       <>
         <li>
-          <NavLink to={"/"}>Home</NavLink>
+          <NavLink
+            to={"/"}
+            style={({ isActive }) => {
+              return {
+                background: isActive ? "white" : "white",
+                color: isActive ? "black" : "white",
+                border: isActive ? "2px solid red" : "red",
+              };
+            }}
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"/details"}>Property Details</NavLink>
+          <NavLink
+            to={"/details"}
+            style={({ isActive }) => {
+              return {
+                background: isActive ? "yellow" : "",
+                color: isActive ? "white" : "",
+                border: isActive ? "2px solid red" : "",
+              };
+            }}
+          >
+            Property Details
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"/contact"}>Contact Us</NavLink>
+          <NavLink
+            to={"/contact"}
+            style={({ isActive }) => {
+              return {
+                background: isActive ? "white" : "",
+                color: isActive ? "black" : "",
+                border: isActive ? "2px solid red" : "",
+              };
+            }}
+          >
+            Contact Us
+          </NavLink>
         </li>
         {User && (
           <li>
-            <NavLink to={"/update"}>Update Profile</NavLink>
+            <NavLink
+              to={"/update"}
+              style={({ isActive }) => {
+                return {
+                  background: isActive ? "white" : "",
+                  color: isActive ? "purple" : "",
+                  border: isActive ? "2px solid red" : "",
+                };
+              }}
+            >
+              Update Profile
+            </NavLink>
           </li>
         )}
       </>
