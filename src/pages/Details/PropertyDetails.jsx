@@ -1,50 +1,47 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams} from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import { useEffect, useState } from "react";
-import { getData, saveData } from "../../Utility/Localstorage/Localstorage";
+import { getData} from "../../Utility/Localstorage/Localstorage";
 import Footer from "../Shared/Footer/Footer";
 import { GiMoneyStack } from "react-icons/gi";
 import { TiChartAreaOutline } from "react-icons/ti";
 import { MdOutlineSignalWifiStatusbarNull } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
-import toast from "react-hot-toast";
-import { SiNetdata } from "react-icons/si";
+import { Helmet } from "react-helmet";
+
 
 const PropertyDetails = () => {
   const infos = useLoaderData();
-  const { id } = useParams();
+  const {id}=useParams();
+  const idInt=parseInt(id);
+  const info=infos.find((info)=>info.id===idInt)
   const [display, setDisplay] = useState([]);
-
   useEffect(() => {
-    const visitProperty = getData();
+    const stored = getData();
     if (infos.length > 0) {
-      const visits = infos.filter((visit) => visitProperty.includes(visit.id));
+      const visits = infos.filter((visit) => stored.includes(visit.id));
       setDisplay(visits);
     }
   }, [infos]);
 
-  const handleRemoveData = (id) => {
-    const storageData = getData();
-    const updatedData = storageData.filter((item) => item !== id);
-    localStorage.setItem("Items", JSON.stringify(updatedData));
-    // saveData(updatedData)
-    setDisplay(display.filter((item) => item.id !== id));
-    toast.success("Data Successfully Removed!");
-  };
+  
 
   return (
     <div>
+      <Helmet>
+        <title>Details Property || Castle of houses</title>
+      </Helmet>
       <Navbar />
       {display.length === 0 ? (
-        <div className="flex flex-col items-center justify-center mt-12 mb-4">
-          <h1 className="lg:text-4xl font-bold text-red-600 text-centers">
+        <div className="flex flex-col items-center justify-center text-center mt-6 mb-6">
+          <h1 className="text-4xl font-bold text-red-600">
             Property Not Found
           </h1>
           <p className="text-lg text-gray-600 mt-4">
             Sorry, we couldn't find the property you're looking for.
           </p>
           <button className="mt-6 px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-            <Link to={'/'}> Go Back</Link>
+            <Link to={"/"}> Go Back</Link>
           </button>
         </div>
       ) : (
@@ -101,12 +98,9 @@ const PropertyDetails = () => {
                 <span className="text-2xl font-medium">Description</span>
                 {" : "} {data.description}
               </p>
-              <button
-                onClick={() => handleRemoveData(data.id)}
-                className="btn btns-square bg-yellow-200"
-              >
-                Remove
-              </button>
+              <Link to={`/res/${data.id}`}>
+                <button className="btn btns-square bg-yellow-200">Back</button>
+              </Link>
             </div>
           </div>
         ))

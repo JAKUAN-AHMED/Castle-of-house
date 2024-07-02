@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Utility/Provider/ProviderContext";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 const Login = () => {
    const {LogIn}=useContext(AuthContext);
    const [Error,setError]=useState(null);
@@ -26,6 +27,9 @@ const Login = () => {
    };
     return (
       <div>
+        <Helmet>
+          <title>Login || Castle of houses</title>
+        </Helmet>
         <Navbar></Navbar>
         <div className="hero bg-base-200 max-w-6xl mx-auto mb-8 mt-8">
           <div className="hero-content flex-col lg:flex-row justify-between">
@@ -91,13 +95,12 @@ const Login = () => {
                 </div>
               </form>
               <p className="text-center">
-               Not Registered yet? Please{" "}
+                Not Registered yet? Please{" "}
                 <Link className="link" to={"/register"}>
                   <button className="link">Register</button>
                 </Link>
               </p>
             </div>
-
           </div>
         </div>
         <Footer></Footer>

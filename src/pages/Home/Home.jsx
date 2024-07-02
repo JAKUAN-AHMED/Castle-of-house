@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Amenities from "../Amenities/Amenities.jsx";
 import Header from "../Header/Header";
 import PhotoGallery from "../PhotoGallery/PhotoGallery.jsx";
@@ -8,6 +9,9 @@ import Navbar from "../Shared/Navbar/Navbar";
 const Home = () => {
     return (
       <div>
+        <Helmet>
+          <title>Home || Castle of houses</title>
+        </Helmet>
         <Navbar></Navbar>
         <Header></Header>
         <Recidencies></Recidencies>

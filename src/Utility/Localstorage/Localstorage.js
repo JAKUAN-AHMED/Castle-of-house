@@ -1,20 +1,22 @@
-const getData=()=>{
-    const storedD=localStorage.getItem('items');
-    if(storedD)
-        {
-            return JSON.parse(storedD);
-        }
-        else{
-            return [];
-        }
-}
-const saveData=(id)=>{
-    const save=getData();
-    const exist=save.find(data=>data.id===id);
-    if(!exist)
-        {
-            save.push(id);
-            localStorage.setItem('items',JSON.stringify(save))
-        }
-}
-export  {getData,saveData};
+// Utility/Localstorage/Localstorage.js
+
+const getData = () => {
+  const storedData = localStorage.getItem('items');
+  return storedData ? JSON.parse(storedData) : [];
+};
+
+const saveData = (id) => {
+  let save = getData();
+  if (!save.includes(id)) {
+    save.push(id);
+    localStorage.setItem('items', JSON.stringify(save));
+  }
+};
+
+const removeItem = (idToRemove) => {
+  let save = getData();
+  save = save.filter(data => data !== idToRemove); // Remove idToRemove from save array
+  localStorage.setItem('items', JSON.stringify(save));
+};
+
+export { getData, saveData, removeItem };

@@ -5,6 +5,7 @@ import { IoPricetagsOutline } from "react-icons/io5";
 import { sliderSettings } from "./Recidencies.js";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const Recidencies = () => {
   const [info, setInfo] = useState([]);
   useEffect(() => {
@@ -14,6 +15,9 @@ const Recidencies = () => {
   }, []);
   return (
     <section id="res" className="wrapper">
+      <Helmet>
+        <title>Recidencies || Castle of houses</title> 
+      </Helmet>
       <div className="paddings innerWidth r-container">
         <div className="r-head flexColStart mt-12 mb-12">
           <span className="orangeText">Our</span>

@@ -2,6 +2,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./Header.css";
 import { Link} from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -54,6 +55,9 @@ function Header() {
   return (
     <>
       <div ref={sliderRef} className="keen-slider">
+        <Helmet>
+          <title>Header || Castle of houses</title>
+        </Helmet>
         <div
           className="keen-slider__slide number-slide1"
           style={{

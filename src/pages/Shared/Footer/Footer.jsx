@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet";
+
 const Footer = () => {
     return (
       <footer className="footer bg-base-200 text-base-content p-10">
+        <Helmet>
+          <title>Footer|| Castle of houses</title>
+        </Helmet>
         <nav>
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
@@ -23,7 +28,8 @@ const Footer = () => {
         </nav>
         <form>
           <h6 className="footer-title">
-            <span className="text-red-600">Castle</span> <span className="text-yellow-400">of</span>{" "}
+            <span className="text-red-600">Castle</span>{" "}
+            <span className="text-yellow-400">of</span>{" "}
             <span className="text-blue-600">houses</span>
           </h6>
           <fieldset className="hidden md:form-control w-80">

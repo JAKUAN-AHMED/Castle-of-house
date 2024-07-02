@@ -6,6 +6,7 @@ import { AuthContext } from '../../../Utility/Provider/ProviderContext';
 import { Link } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import toast from 'react-hot-toast';
+import { Helmet } from 'react-helmet';
 const Register = () => {
     const [show,setShow]=useState(false);
     const passRef=useRef();
@@ -44,6 +45,9 @@ const Register = () => {
   const isDisabled = Error !== null;
   return (
     <div>
+      <Helmet>
+        <title>Register || Castle of houses</title>
+      </Helmet>
       <Navbar></Navbar>
       <div className="hero bg-base-200 max-w-6xl mx-auto mb-8 mt-8">
         <div className="hero-content flex-col lg:flex-row justify-between">

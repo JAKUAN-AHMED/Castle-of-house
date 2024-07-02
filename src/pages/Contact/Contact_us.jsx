@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import contact_photo from "../../assets/contact_photo.jpg";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
@@ -6,6 +7,9 @@ const Contact_us = () => {
     <div>
       <Navbar></Navbar>
       <div className="hero bg-base-200 min-h-screen mb-8 mt-8">
+        <Helmet>
+          <title>Contact_us || Castle of houses</title>
+        </Helmet>
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left pr-8">
             <h1 className="text-5xl font-bold text-blue-600 mt-4">
