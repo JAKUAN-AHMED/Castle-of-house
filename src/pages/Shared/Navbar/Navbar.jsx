@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Utility/Provider/ProviderContext";
 import user from  '../../../assets/user.png';
 import toast from "react-hot-toast";
-import { Helmet } from "react-helmet";
+
 const Navbar = () => {
   const {User,LogOut}=useContext(AuthContext);
   const handleLogOut=()=>{
@@ -23,9 +23,7 @@ const Navbar = () => {
     </>
     return (
       <div className="navbar bg-red-200 border rounded shadow-2xl">
-        <Helmet>
-          <title>Navbar || Castle of houses</title>
-        </Helmet>
+       
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
