@@ -7,12 +7,14 @@ import Login from "../pages/Login/Login";
 import View from "../pages/View/View";
 import Register from "../pages/Shared/Register/Register";
 import ErrorPage from "../Utility/ErrorPage/ErrorPage";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import PrivateRoutes from "../Utility/PrivateRoutes/PrivateRoutes";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/update",
+        element: 
+          <PrivateRoutes>
+            <UpdateProfile></UpdateProfile>
+          </PrivateRoutes>
+        ,
       },
       {
         path: "/res/:id",

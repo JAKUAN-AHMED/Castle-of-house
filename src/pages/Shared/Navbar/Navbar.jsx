@@ -10,20 +10,26 @@ const Navbar = () => {
     LogOut();
     toast.success('Log Out Successfully');
   }
-    const links=<>
-    <li>
-        <NavLink to={'/'}>Home</NavLink>
-    </li>
-    <li>
-        <NavLink to={'/details'}>Property Details</NavLink>
-    </li>
-    <li>
-        <NavLink to={'/contact'}>Contact Us</NavLink>
-    </li>
-    </>
+    const links = (
+      <>
+        <li>
+          <NavLink to={"/"}>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to={"/details"}>Property Details</NavLink>
+        </li>
+        <li>
+          <NavLink to={"/contact"}>Contact Us</NavLink>
+        </li>
+        {User && (
+          <li>
+            <NavLink to={"/update"}>Update Profile</NavLink>
+          </li>
+        )}
+      </>
+    );
     return (
       <div className="navbar bg-red-200 border rounded shadow-2xl">
-       
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,11 +67,13 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end gap-2">
-          {User && (
+          {User ? (
             <div className="flex">
               <img
                 className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] border rounded-full"
-                src={user}
+                src={User.photoURL || user}
+                alt={User.displayName || 'user'}
+                title={User.displayName ||' user'}
               />
               <a
                 onClick={handleLogOut}
@@ -74,10 +82,11 @@ const Navbar = () => {
                 Log Out
               </a>
             </div>
+          ) : (
+            <a className="btn btn-ghost border-black">
+              <Link to={"/login"}>Login</Link>
+            </a>
           )}
-          <a className={`btn btn-ghost border-black ${User ? "hidden" : " "}`}>
-            <Link to={"/login"}>Login</Link>
-          </a>
         </div>
       </div>
     );

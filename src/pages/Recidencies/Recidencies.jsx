@@ -28,8 +28,8 @@ const Recidencies = () => {
           {info.map((card, i) => (
             <SwiperSlide key={i}>
               <div
-                data-aos="zoom-in-up"
-                data-aos-duration="1500"
+                data-aos="fade-down"
+                // data-aos-duration="1500"
                 className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 "
               >
                 <img
