@@ -1,8 +1,6 @@
 <h1 align="center" style="color: white; background-color: black;">🏡 Residential Real Estate Website</h1>
 
-<p align="center">
-  <img src="https://via.placeholder.com/1000x250/000000/FFFFFF/?text=Residential+Real+Estate+Website" alt="Website Banner">
-</p>
+
 
 ---
 
@@ -24,7 +22,7 @@ Welcome to the **Residential Real Estate Website**, a responsive platform dedica
 Check out the live demo: [Live Site URL](https://castle-9db52.web.app/)
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x600/000000/FFFFFF/?text=Website+Screenshot" alt="Website Screenshot">
+  <img src="https://i.ibb.co/D52fTSD/First.jpg" alt="Website Screenshot">
 </p>
 
 ---
