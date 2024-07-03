@@ -125,9 +125,6 @@ Contributions are welcome! To contribute:
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 ## 📬 Contact Information
@@ -143,7 +140,6 @@ For questions or feedback, contact me at [jakuanultimate777@gmail.com](mailto:ja
 ---
 
 ### 🌟 Additional Notes
-- This project was created as part of an assignment focusing on the residential real estate category.
 - All property data is stored in a JSON file and images are hosted on imgbb.
 
 ---
