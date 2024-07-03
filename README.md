@@ -1,6 +1,6 @@
 # 🏡 Residential Real Estate Website
 
-![Website Banner](demo.png)
+![Website Banner](./assets/screenshot.png)
 
 ## Overview
 Welcome to the **Residential Real Estate Website**, a responsive platform dedicated to showcasing various residential properties. This project is designed to provide an interactive and seamless experience for users looking to explore single-family homes, townhouses, apartments, and more.
@@ -13,9 +13,10 @@ Welcome to the **Residential Real Estate Website**, a responsive platform dedica
 - **Estate Cards**: Detailed property information including images, descriptions, and facilities.
 
 ## 🎥 Demo
-Check out the live demo: [Live Site URL](https://your-live-site-url.com)
+Check out the live demo: [Live Site URL](https://castle-9db52.web.app/)
 
-![Website Screenshot](demo-screenshot.png)
+![Website Screenshot](./assets/screenshot.png)
+
 
 ## 📋 Table of Contents
 1. [Installation](#installation)
