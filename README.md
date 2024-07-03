@@ -1,6 +1,8 @@
-# 🏡 Residential Real Estate Website
+<h1 align="center" style="color: white; background-color: black;">🏡 Residential Real Estate Website</h1>
 
-![Website Banner](./assets/screenshot.png)
+<p align="center">
+  <img src="https://via.placeholder.com/1000x250/000000/FFFFFF/?text=Residential+Real+Estate+Website" alt="Website Banner">
+</p>
 
 ---
 
@@ -21,7 +23,9 @@ Welcome to the **Residential Real Estate Website**, a responsive platform dedica
 ## 🎥 Demo
 Check out the live demo: [Live Site URL](https://castle-9db52.web.app/)
 
-![Website Screenshot](./assets/screenshot.png)
+<p align="center">
+  <img src="https://via.placeholder.com/800x600/000000/FFFFFF/?text=Website+Screenshot" alt="Website Screenshot">
+</p>
 
 ---
 
@@ -132,7 +136,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or feedback, contact me at [jakuanultimate777@gmail.com](mailto:jakuanultimate777@gmail.com).
 
 ### Connect with me on LinkedIn:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jakuan-ahmed)
+<p align="center">
+  <a href="https://www.linkedin.com/in/jakuan-ahmed">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+  </a>
+</p>
 
 ---
 
@@ -142,5 +150,6 @@ For questions or feedback, contact me at [jakuanultimate777@gmail.com](mailto:ja
 
 ---
 
-Thank you for visiting! If you find this project interesting, please give it a star ⭐️ on GitHub!
-
+<p align="center">
+  Thank you for visiting! If you find this project interesting, please give it a star ⭐️ on GitHub!
+</p>
